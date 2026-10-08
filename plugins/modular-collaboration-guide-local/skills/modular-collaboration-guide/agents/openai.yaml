@@ -1,0 +1,4 @@
+interface:
+  display_name: "协作指南"
+  short_description: "在 Codex 中选择提问与推进方法，管理有来源、可纠正和可撤回的个人协作记忆"
+  default_prompt: "使用 $modular-collaboration-guide 帮我选择下一步提问和协作路径，并打开我的模块管理面板。"

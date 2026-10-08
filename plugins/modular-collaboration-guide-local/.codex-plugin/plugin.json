@@ -1,0 +1,5 @@
+{
+  "name": "modular-collaboration-guide-local", "version": "0.2.0",
+  "description": "本地管理协作方法与个人记忆，使用自己的 Codex 账号。",
+  "skills": "./skills/", "mcpServers": "./.mcp.json"
+}

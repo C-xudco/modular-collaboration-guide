@@ -1,0 +1,10 @@
+import { build } from 'esbuild';
+import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
+await import('./build-panel.mjs');
+await build({ entryPoints: ['local/runtime-source.ts'], outfile: 'local/runtime.mjs', bundle: true, platform: 'node', format: 'esm', target: 'node24', minify: true });
+const root = 'plugins/modular-collaboration-guide-local';
+await mkdir(root + '/local', { recursive: true });
+for (const file of ['runtime.mjs', 'server.mjs', 'store.mjs']) await cp('local/' + file, root + '/local/' + file);
+await cp('skills', root + '/skills', { recursive: true });
+for (const file of ['LICENSE', 'THIRD_PARTY_NOTICES.md']) await cp(file, root + '/' + file);
+console.log('Local plugin bundled; no cloud endpoint or API key required.');

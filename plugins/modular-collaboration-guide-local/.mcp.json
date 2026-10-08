@@ -1,0 +1,5 @@
+{
+  "mcpServers": { "modular-collaboration-guide-local": {
+    "command": "node", "args": ["${PLUGIN_ROOT}/local/server.mjs"], "cwd": "${PLUGIN_ROOT}"
+  } }
+}

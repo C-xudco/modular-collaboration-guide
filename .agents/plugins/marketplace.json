@@ -1,0 +1,9 @@
+{
+  "name": "modular-collaboration-guide",
+  "interface": { "displayName": "协作指南 · 本地部署" },
+  "plugins": [{
+    "name": "modular-collaboration-guide-local",
+    "source": { "source": "local", "path": "./plugins/modular-collaboration-guide-local" },
+    "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" }, "category": "Productivity"
+  }]
+}

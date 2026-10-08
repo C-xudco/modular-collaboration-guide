@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "modular-collaboration-guide-local",
+  "version": "0.2.0",
+  "description": "Local Codex collaboration guidance, modular memory and editable panel. No author cloud service or API key required.",
+  "author": { "name": "C-xudco" },
+  "extensions": { "com.openai": { "interface": {
+    "displayName": "协作指南 · 本地版",
+    "shortDescription": "本地管理协作方法与个人记忆",
+    "longDescription": "个人协作档案存储在自己的电脑。本地推荐与管理不调用模型；对话和深入建议使用自己的 Codex 账号。",
+    "developerName": "C-xudco", "category": "Productivity", "capabilities": ["Interactive"],
+    "defaultPrompt": "使用协作指南帮我确定下一步，并打开本地模块管理面板。"
+  } } }
+}
